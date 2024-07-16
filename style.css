@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
 
+
+@font-face {
+    font-family: 'URW Geometric';
+    src: url('fonts/URWGeometric-Regular.eot');
+    src: url('fonts/URWGeometric-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/URWGeometric-Regular.woff2') format('woff2'),
+        url('fonts/URWGeometric-Regular.woff') format('woff'),
+        url('fonts/URWGeometric-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
-	--open-sans: 'Open Sans', sans-serif;
+	--URWGeometricRegular: 'URW Geometric', sans-serif;
 	--oswald: 'Oswald', sans-serif;
 
 	--blue: #0097FC;
@@ -15,7 +26,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: var(--open-sans);
+	font-family: var(--URWGeometricRegular);
 }
 body {
 	background: #eee;
@@ -74,6 +85,8 @@ nav .nav-menu > li {
 nav .nav-menu > li > a {
 	color: #000;
 	transition: all .3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 nav .nav-menu > li:hover > a {
 	color: var(--blue);
